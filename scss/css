@@ -1,3 +1,6 @@
+h1, h2, h3 {
+  text-align: center; }
+
 /* GENERAL STYLES */
 .container {
   display: flex;
@@ -7,9 +10,6 @@
   margin: auto;
   background-color: #e3f4fa;
   font-family: 'Open Sans', sans-serif; }
-
-h1, h2, h3 {
-  text-align: center; }
 
 /* NAVIGATION STYLES */
 .main-nav {
@@ -198,4 +198,4 @@ h1, h2, h3 {
   .portfolio-item {
     width: 30%; } }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=css.map */
