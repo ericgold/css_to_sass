@@ -1,0 +1,22 @@
+/* INTRODUCTION STYLES */
+
+.introduction {
+	@include flexy(column, center);
+	//display: flex;
+	//flex-direction: column;
+	//align-items: center;
+	
+}
+
+.introduction p,
+.contact p {
+	margin: 0.5em 1em;
+	padding: 0.5em 1em;
+	color: $text-color-light;
+	text-align: center;
+	line-height: 150%;
+}
+
+.intro-image {
+	margin: 3em 1em 1em 1em;
+}
