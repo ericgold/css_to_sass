@@ -1,23 +1,22 @@
 /* NAVIGATION STYLES */
 
 .main-nav {
-	display: flex;
-	flex-direction: column;
-}
+	@include flexy(column, stretch);
 
-.main-nav a {
-	display: block;
-	width: 90%;
-	text-align: center;
-	background-color: #fff;
-	margin: 0.15em;
-	padding: 0.5em;
-	text-decoration: none;
-	color: $text-color-dark;
-	font-weight: bold;
-	align-self: center;
-}
+	a {
+		display: block;
+		width: 90%;
+		text-align: center;
+		background-color: #fff;
+		margin: 0.15em;
+		padding: 0.5em;
+		text-decoration: none;
+		color: $text-color-dark;
+		font-weight: bold;
+		align-self: center;
 
-.main-nav a:hover {
-		color: $text-color-hover;
+		&:hover {
+			color: $text-color-hover;
+		}
+	}
 }

@@ -1,6 +1,10 @@
-/* CONTACT STYLES (contact p is under intro)*/
+/* CONTACT STYLES */
 .contact {
 	padding: 2em 0.1em;
+
+	p {
+		@extend %paragraph;
+	}
 }
 
 #phone,

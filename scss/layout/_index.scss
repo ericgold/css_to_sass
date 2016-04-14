@@ -1,4 +1,5 @@
 @import '_mixins.scss';
+@import '_extends.scss';
 @import '_navigation.scss';
 @import '_introduction.scss';
 @import '_portfolio.scss';
@@ -9,8 +10,7 @@
 /* GENERAL STYLES */
 
 .container {
-	display: flex;
-	flex-direction: column;
+	@include flexy(column, stretch);
 	padding: 2%;
 	max-width: 1200px;
 	margin: auto;

@@ -1,39 +1,37 @@
 h1, h2, h3 {
   text-align: center; }
 
+.introduction p, .contact p {
+  margin: 0.5em 1em;
+  padding: 0.5em 1em;
+  color: #31452a;
+  text-align: center;
+  line-height: 150%; }
+
 /* NAVIGATION STYLES */
 .main-nav {
   display: flex;
-  flex-direction: column; }
-
-.main-nav a {
-  display: block;
-  width: 90%;
-  text-align: center;
-  background-color: #fff;
-  margin: 0.15em;
-  padding: 0.5em;
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-  align-self: center; }
-
-.main-nav a:hover {
-  color: #69945a; }
+  flex-direction: column;
+  align-items: stretch; }
+  .main-nav a {
+    display: block;
+    width: 90%;
+    text-align: center;
+    background-color: #fff;
+    margin: 0.15em;
+    padding: 0.5em;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    align-self: center; }
+    .main-nav a:hover {
+      color: #69945a; }
 
 /* INTRODUCTION STYLES */
 .introduction {
   display: flex;
   flex-direction: column;
   align-items: center; }
-
-.introduction p,
-.contact p {
-  margin: 0.5em 1em;
-  padding: 0.5em 1em;
-  color: #31452a;
-  text-align: center;
-  line-height: 150%; }
 
 .intro-image {
   margin: 3em 1em 1em 1em; }
@@ -46,6 +44,7 @@ h1, h2, h3 {
 .portfolio {
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   margin: 0.5em;
   padding: 1em; }
 
@@ -56,14 +55,12 @@ h1, h2, h3 {
   text-align: center;
   line-height: 150%;
   margin: 0.5em; }
+  .portfolio-item p {
+    padding: 0.5em 1em; }
+  .portfolio-item img {
+    width: 100%; }
 
-.portfolio-item p {
-  padding: 0.5em 1em; }
-
-.portfolio-item img {
-  width: 100%; }
-
-/* CONTACT STYLES (contact p is under intro)*/
+/* CONTACT STYLES */
 .contact {
   padding: 2em 0.1em; }
 
@@ -80,27 +77,26 @@ h1, h2, h3 {
 .footer-nav {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: flex-end;
   padding: 1em;
   margin: 0 1em;
   border-top: 1px solid lightgray; }
-
-.footer-nav h3 {
-  margin-right: auto; }
+  .footer-nav h3 {
+    margin-right: auto; }
 
 .link-top {
   text-decoration: none;
   font-weight: bold;
   color: black; }
-
-.link-top:hover {
-  color: #69945a; }
+  .link-top:hover {
+    color: #69945a; }
 
 /* GENERAL STYLES */
 .container {
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   padding: 2%;
   max-width: 1200px;
   margin: auto;

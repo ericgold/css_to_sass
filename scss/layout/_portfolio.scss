@@ -6,8 +6,7 @@
 }
 
 .portfolio {
-	display: flex;
-	flex-direction: column;
+	@include flexy(column, stretch);
 	margin: 0.5em;
 	padding: 1em;
 }
@@ -20,12 +19,16 @@
 	text-align: center;
 	line-height: 150%;
 	margin: 0.5em;
+
+	p {
+		padding: 0.5em 1em;
+	}
+
+	img {
+		width: 100%;
+	}
+
 }
 
-.portfolio-item p {
-	padding: 0.5em 1em;
-}
 
-.portfolio-item img {
-	width: 100%;
-}
+
