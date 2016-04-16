@@ -24,4 +24,8 @@
 		margin: 2em;
 		width: 40%;
 	}
+
+	@include mq(large) {
+		width: 70%;
+	}
 }

@@ -29,7 +29,7 @@ $brkpoint-lg: 1024px;
 
 	}
 	@else if $break == "large" {
-		@media(min-width: $breakpoint-lg) {
+		@media(min-width: $brkpoint-lg) {
 			@content;
 		}
 	}

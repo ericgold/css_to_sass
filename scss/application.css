@@ -11,6 +11,17 @@ h1, h2, h3 {
   text-align: center;
   line-height: 150%; }
 
+@media (min-width: 1024px) {
+  .main-header {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-end; } }
+@media (min-width: 1024px) {
+  .main-header h1 {
+    margin-right: auto;
+    margin-left: 1em; } }
+
 /* NAVIGATION STYLES */
 .main-nav {
   display: flex;
@@ -33,12 +44,21 @@ h1, h2, h3 {
       .main-nav a {
         background-color: #e3f4fa;
         width: 15%; } }
+    @media (min-width: 1024px) {
+      .main-nav a {
+        margin-left: 1em;
+        flex: 1;
+        width: auto;
+        display: inline; } }
   @media (min-width: 768px) {
     .main-nav {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center; } }
+  @media (min-width: 1024px) {
+    .main-nav {
+      margin-right: 1em; } }
 
 /* FOOTER STYLES */
 .footer-link {
@@ -107,6 +127,9 @@ h1, h2, h3 {
     .intro-image {
       margin: 2em;
       width: 40%; } }
+  @media (min-width: 1024px) {
+    .intro-image {
+      width: 70%; } }
 
 /* PORTFOLIO STYLES */
 .portfolio-container {
@@ -141,6 +164,9 @@ h1, h2, h3 {
     .portfolio-item {
       width: 40%;
       flex-grow: 1; } }
+  @media (min-width: 1024px) {
+    .portfolio-item {
+      width: 30%; } }
 
 /* CONTACT STYLES */
 .contact {
@@ -151,110 +177,5 @@ h1, h2, h3 {
   color: gray;
   font-weight: bold;
   margin-left: 1em; }
-
-/* MEDIA QUERIES */
-/*@media (min-width: 768px) {
-
-	.main-nav {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-	}
-//This rule does not seem to change anything vs mobile, so leaving it out
-	.footer-nav {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: flex-end;
-	}
-
-	.main-nav a {
-		background-color: $background;
-		width: 15%;
-	}
-
-	.introduction {
-		display: flex;
-		flex-direction: row-reverse;
-	}
-
-	.introduction p {
-		align-self: flex-start;
-		text-align: left;
-		margin-top: 2em;
-	}
-
-	.intro-image {
-		margin: 2em;
-		width: 40%;
-	}
-
-	.portfolio {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-
-	.portfolio-item {
-		width: 40%;
-		flex-grow: 1;
-	}
-
-	.link-top {
-		display: none;
-	}
-
-	.footer-link {
-		display: inline-block;
-		margin: 1em;
-		text-decoration: none;
-		color: $text-color;
-		font-weight: bold;
-	}
-
-	.footer-link:hover {
-		color: #69945a;
-	}
-
-}*/
-@media (min-width: 1024px) {
-  .main-header {
-    display: flex;
-    justify-content: flex-end; }
-
-  .main-nav,
-  .footer-nav {
-    display: flex;
-    flex-direction: row; }
-
-  .main-nav {
-    padding: 0.5em;
-    margin-right: 1em; }
-
-  .main-nav a {
-    margin-left: 1em;
-    flex: 1;
-    width: auto;
-    display: inline; }
-
-  .main-header h1 {
-    margin-right: auto;
-    margin-left: 1em; }
-
-  .introduction {
-    display: flex;
-    flex-direction: row-reverse; }
-
-  .intro-image {
-    width: 70%; }
-
-  .portfolio {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
-
-  .portfolio-item {
-    width: 30%; } }
 
 /*# sourceMappingURL=application.css.map */

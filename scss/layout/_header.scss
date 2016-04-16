@@ -1,0 +1,13 @@
+.main-header {
+	@include mq(large){
+		@include flexy(row, stretch);
+		justify-content: flex-end;	
+	}
+
+	h1 {
+		@include mq(large) {
+			margin-right: auto;
+			margin-left: 1em;
+		}
+	}	
+}
