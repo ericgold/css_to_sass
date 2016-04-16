@@ -1,5 +1,11 @@
-$background: #e3f4fa;
-$text-color: gray;
-$text-color-light: #31452a;
-$text-color-dark: #000;
-$text-color-hover: #69945a;
+$light-blue: #e3f4fa;
+$gray: gray;
+$light-gray: lighten($gray, 10%);
+$dark-gray: darken($gray, 30%);
+$green: #69945a;
+
+$background: $light-blue;
+$text-color: $gray;
+$text-color-light: $light-gray;
+$text-color-dark: $dark-gray;
+$text-color-hover: $green;
