@@ -9,6 +9,11 @@
 	@include flexy(column, stretch);
 	margin: 0.5em;
 	padding: 1em;
+
+	@include mq(medium) {
+		@include flexy(row, stretch);
+		flex-wrap: wrap;
+	}
 }
 
 #portfolio-two {
@@ -28,6 +33,10 @@
 		width: 100%;
 	}
 
+	@include mq(medium)  {
+		width: 40%;
+		flex-grow: 1;
+	}
 }
 
 

@@ -2,6 +2,17 @@
 
 .footer-link {
 	display: none;
+
+	@include mq(medium) {
+		display: inline-block;
+		margin: 1em;
+		text-decoration: none;
+		color: $text-color;
+		font-weight: bold;
+		&:hover {
+			color: $text-color-hover;
+		}
+	}
 }
 
 .footer-nav {
@@ -23,6 +34,10 @@
 
 	&:hover {
 		color: $text-color-hover;
-}
+	}
+
+	@include mq(medium) {
+		display: none;
+	}
 }
 

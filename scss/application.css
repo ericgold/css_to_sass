@@ -29,10 +29,29 @@ h1, h2, h3 {
     align-self: center; }
     .main-nav a:hover {
       color: #69945a; }
+    @media (min-width: 768px) {
+      .main-nav a {
+        background-color: #e3f4fa;
+        width: 15%; } }
+  @media (min-width: 768px) {
+    .main-nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center; } }
 
 /* FOOTER STYLES */
 .footer-link {
   display: none; }
+  @media (min-width: 768px) {
+    .footer-link {
+      display: inline-block;
+      margin: 1em;
+      text-decoration: none;
+      color: gray;
+      font-weight: bold; }
+      .footer-link:hover {
+        color: #69945a; } }
 
 .footer-nav {
   display: flex;
@@ -51,6 +70,9 @@ h1, h2, h3 {
   color: black; }
   .link-top:hover {
     color: #69945a; }
+  @media (min-width: 768px) {
+    .link-top {
+      display: none; } }
 
 /* GENERAL STYLES */
 .container {
@@ -68,9 +90,23 @@ h1, h2, h3 {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media (min-width: 768px) {
+    .introduction p {
+      align-self: flex-start;
+      text-align: left;
+      margin-top: 2em; } }
+  @media (min-width: 768px) {
+    .introduction {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: stretch; } }
 
 .intro-image {
   margin: 3em 1em 1em 1em; }
+  @media (min-width: 768px) {
+    .intro-image {
+      margin: 2em;
+      width: 40%; } }
 
 /* PORTFOLIO STYLES */
 .portfolio-container {
@@ -83,6 +119,12 @@ h1, h2, h3 {
   align-items: stretch;
   margin: 0.5em;
   padding: 1em; }
+  @media (min-width: 768px) {
+    .portfolio {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      flex-wrap: wrap; } }
 
 #portfolio-two {
   margin-top: 2em; }
@@ -95,6 +137,10 @@ h1, h2, h3 {
     padding: 0.5em 1em; }
   .portfolio-item img {
     width: 100%; }
+  @media (min-width: 768px) {
+    .portfolio-item {
+      width: 40%;
+      flex-grow: 1; } }
 
 /* CONTACT STYLES */
 .contact {
@@ -107,57 +153,71 @@ h1, h2, h3 {
   margin-left: 1em; }
 
 /* MEDIA QUERIES */
-@media (min-width: 768px) {
-  .main-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; }
+/*@media (min-width: 768px) {
 
-  .footer-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end; }
+	.main-nav {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+//This rule does not seem to change anything vs mobile, so leaving it out
+	.footer-nav {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-end;
+	}
 
-  .main-nav a {
-    background-color: #e3f4fa;
-    width: 15%; }
+	.main-nav a {
+		background-color: $background;
+		width: 15%;
+	}
 
-  .introduction {
-    display: flex;
-    flex-direction: row-reverse; }
+	.introduction {
+		display: flex;
+		flex-direction: row-reverse;
+	}
 
-  .introduction p {
-    align-self: flex-start;
-    text-align: left;
-    margin-top: 2em; }
+	.introduction p {
+		align-self: flex-start;
+		text-align: left;
+		margin-top: 2em;
+	}
 
-  .intro-image {
-    margin: 2em;
-    width: 40%; }
+	.intro-image {
+		margin: 2em;
+		width: 40%;
+	}
 
-  .portfolio {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
+	.portfolio {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 
-  .portfolio-item {
-    width: 40%;
-    flex-grow: 1; }
+	.portfolio-item {
+		width: 40%;
+		flex-grow: 1;
+	}
 
-  .link-top {
-    display: none; }
+	.link-top {
+		display: none;
+	}
 
-  .footer-link {
-    display: inline-block;
-    margin: 1em;
-    text-decoration: none;
-    color: gray;
-    font-weight: bold; }
+	.footer-link {
+		display: inline-block;
+		margin: 1em;
+		text-decoration: none;
+		color: $text-color;
+		font-weight: bold;
+	}
 
-  .footer-link:hover {
-    color: #69945a; } }
+	.footer-link:hover {
+		color: #69945a;
+	}
+
+}*/
 @media (min-width: 1024px) {
   .main-header {
     display: flex;

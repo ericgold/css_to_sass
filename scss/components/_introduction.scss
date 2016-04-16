@@ -5,9 +5,23 @@
 
 	p {
 		@extend %paragraph;
+		@include mq(medium) {
+			align-self: flex-start;
+			text-align: left;
+			margin-top: 2em;
+		}
+	}
+
+	@include mq(medium) {
+		@include flexy(row-reverse, stretch);
 	}
 }
 
 .intro-image {
 	margin: 3em 1em 1em 1em;
+
+	@include mq(medium) {
+		margin: 2em;
+		width: 40%;
+	}
 }

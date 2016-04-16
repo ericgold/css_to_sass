@@ -18,5 +18,15 @@
 		&:hover {
 			color: $text-color-hover;
 		}
+
+		@include mq(medium) {
+			background-color: $background;
+			width: 15%;
+		}
+	}
+
+	@include mq(medium)	{
+		@include flexy(row, center);
+		justify-content: center;
 	}
 }

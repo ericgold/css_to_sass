@@ -1,6 +1,6 @@
 /* MEDIA QUERIES */
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
 
 	.main-nav {
 		display: flex;
@@ -8,7 +8,7 @@
 		align-items: center;
 		justify-content: center;
 	}
-
+//This rule does not seem to change anything vs mobile, so leaving it out
 	.footer-nav {
 		display: flex;
 		flex-direction: row;
@@ -64,7 +64,11 @@
 		color: #69945a;
 	}
 
-}
+}*/
+
+
+//LARGE MEDIA QUERY STYLES//////////////////////////
+
 
 @media (min-width: 1024px) {
 	
