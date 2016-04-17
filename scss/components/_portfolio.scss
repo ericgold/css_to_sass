@@ -6,12 +6,12 @@
 }
 
 .portfolio {
-	@include flexy(column, stretch);
+	@include flexy(column);
 	margin: 0.5em;
 	padding: 1em;
 
 	@include mq(medium) {
-		@include flexy(row, stretch);
+		@include flexy(row);
 		flex-wrap: wrap;
 	}
 }
@@ -22,11 +22,11 @@
 
 .portfolio-item {
 	text-align: center;
-	line-height: 150%;
+	line-height: $tall-line;
 	margin: 0.5em;
 
 	p {
-		padding: 0.5em 1em;
+		@extend %padding-standard;
 	}
 
 	img {

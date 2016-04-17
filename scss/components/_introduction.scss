@@ -13,7 +13,7 @@
 	}
 
 	@include mq(medium) {
-		@include flexy(row-reverse, stretch);
+		@include flexy(row-reverse);
 	}
 }
 

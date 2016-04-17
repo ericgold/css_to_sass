@@ -1,6 +1,6 @@
 // Flexbox Mixin ////////////////////////
 
-@mixin flexy($direction, $align-items) {
+@mixin flexy($direction, $align-items: null) {
 	display: flex;
 	flex-direction: $direction;
 	align-items: $align-items;

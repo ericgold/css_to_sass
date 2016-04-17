@@ -1,13 +1,13 @@
 /* NAVIGATION STYLES */
 
 .main-nav {
-	@include flexy(column, stretch);
+	@include flexy(column);
 
 	a {
 		display: block;
 		width: 90%;
 		text-align: center;
-		background-color: #fff;
+		background-color: $background-light;
 		margin: 0.15em;
 		padding: 0.5em;
 		text-decoration: none;

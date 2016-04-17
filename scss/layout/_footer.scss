@@ -8,7 +8,7 @@
 		margin: 1em;
 		text-decoration: none;
 		color: $text-color;
-		font-weight: bold;
+		font-weight: $bold;
 		&:hover {
 			color: $text-color-hover;
 		}
@@ -17,10 +17,11 @@
 
 .footer-nav {
 	@include flexy(row, center);
+	@extend %top-border;
 	justify-content: flex-end;
 	padding: 1em;
 	margin: 0 1em;
-	border-top: 1px solid lightgray;
+	
 
 	h3 {
 		margin-right: auto;
@@ -30,8 +31,8 @@
 
 .link-top {
 	text-decoration: none;
-	font-weight: bold;
-	color: black;
+	font-weight: $bold;
+	color: $text-color-dark;
 
 	&:hover {
 		color: $text-color-hover;

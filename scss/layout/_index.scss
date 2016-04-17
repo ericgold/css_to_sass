@@ -1,4 +1,3 @@
-@import '_extends.scss';
 @import '_header.scss';
 @import '_navigation.scss';
 @import '_footer.scss';
@@ -7,7 +6,7 @@
 /* GENERAL STYLES */
 
 .container {
-	@include flexy(column, stretch);
+	@include flexy(column);
 	padding: 2%;
 	max-width: 1200px;
 	margin: auto;

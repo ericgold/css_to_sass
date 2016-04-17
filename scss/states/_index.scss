@@ -1,4 +1,4 @@
-.is-collapsed-mobile {
+/*.is-collapsed-mobile {
 	@include mq(small) {
 		visibility: collapse;
 		padding: 0;
@@ -6,7 +6,7 @@
 		margin: 0;
 		line-height: 0;
 	}
-}
+}*/
 
 .is-displayed-mobile {
 	@include mq(small) {

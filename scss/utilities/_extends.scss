@@ -1,3 +1,24 @@
 %centered {
 	text-align: center;
 }
+
+%margin-standard {
+	margin: 0.5em 1em;
+}
+
+%padding-standard {
+	padding: 0.5em 1em;
+}
+
+%paragraph {
+	@extend %margin-standard;
+	@extend %padding-standard;
+	@extend %centered;
+	color: $text-color-light;
+	font-size: $font-size-default;
+	line-height: $tall-line;
+}
+
+%top-border {
+	border-top: 1px solid $text-color-light;
+}	

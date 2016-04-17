@@ -1,6 +1,6 @@
 .main-header {
 	@include mq(large){
-		@include flexy(row, stretch);
+		@include flexy(row);
 		justify-content: flex-end;	
 	}
 
