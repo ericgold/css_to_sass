@@ -197,10 +197,8 @@ h3 {
     color: #69945a; }
 
 @media (min-width: 1px) and (max-width: 768px -1) {
-  .is-displayed-mobile {
-    dipslay: block; }
-    .is-hidden-mobile {
-      display: none; } }
+  .is-hidden-mobile {
+    display: none; } }
 @media (min-width: 768px) {
   .is-displayed-mobile {
     display: none; } }
