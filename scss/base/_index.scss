@@ -1,4 +1,14 @@
-h1, h2, h3 {
-	@extend %centered;
-	color: $text-color-dark;
+h1 {
+	@extend %headline;
+	font-size: $font-size-h1;
+}
+
+h2 {
+	@extend %headline;
+	font-size: $font-size-h2;
+}
+
+h3 {
+	@extend %headline;
+	font-size: $font-size-h3;
 }

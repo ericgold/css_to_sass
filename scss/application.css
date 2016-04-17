@@ -12,11 +12,20 @@
   font-size: 1em;
   line-height: 150%; }
 
+h1, h2, h3 {
+  color: #343434; }
+
 .footer-nav {
   border-top: 1px solid #9a9a9a; }
 
-h1, h2, h3 {
-  color: #343434; }
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.5em; }
+
+h3 {
+  font-size: 1.2em; }
 
 @media (min-width: 1024px) {
   .main-header {
@@ -187,15 +196,6 @@ h1, h2, h3 {
   #toggle:hover {
     color: #69945a; }
 
-/*.is-collapsed-mobile {
-	@include mq(small) {
-		visibility: collapse;
-		padding: 0;
-		height: 0;
-		margin: 0;
-		line-height: 0;
-	}
-}*/
 @media (min-width: 1px) and (max-width: 768px -1) {
   .is-displayed-mobile {
     dipslay: block; }
