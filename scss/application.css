@@ -196,9 +196,22 @@ h3 {
   #toggle:hover {
     color: #69945a; }
 
+/*.is-displayed-mobile {
+	@include mq(small) {
+		//dipslay: block; this was flagged as an error by validator
+		@at-root (with: media) {
+			.is-hidden-mobile {
+				display: none;
+			}
+		}
+	}
+	@include mq(medium) {
+		display: none;
+	}
+}*/
 @media (min-width: 1px) and (max-width: 768px -1) {
-  .is-hidden-mobile {
-    display: none; } }
+  .is-displayed-mobile {
+    display: block; } }
 @media (min-width: 768px) {
   .is-displayed-mobile {
     display: none; } }
