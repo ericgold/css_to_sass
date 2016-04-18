@@ -3,11 +3,11 @@
 }
 
 %margin-standard {
-	margin: 0.5em 1em;
+	margin: $tb-spacing $lr-spacing;
 }
 
 %padding-standard {
-	padding: 0.5em 1em;
+	padding: $tb-spacing $lr-spacing;
 }
 
 %paragraph {
