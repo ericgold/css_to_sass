@@ -37,7 +37,6 @@ h3 {
     margin-right: auto;
     margin-left: 1em; } }
 
-/* NAVIGATION STYLES */
 .main-nav {
   display: flex;
   flex-direction: column; }
@@ -74,7 +73,6 @@ h3 {
     .main-nav {
       margin-right: 1em; } }
 
-/* FOOTER STYLES */
 .footer-link {
   display: none; }
   @media (min-width: 768px) {
@@ -107,7 +105,6 @@ h3 {
     .link-top {
       display: none; } }
 
-/* GENERAL STYLES */
 .container {
   display: flex;
   flex-direction: column;
@@ -117,7 +114,6 @@ h3 {
   background-color: #e3f4fa;
   font-family: "Open Sans", sans-serif; }
 
-/* INTRODUCTION STYLES */
 .introduction {
   display: flex;
   flex-direction: column;
@@ -142,7 +138,6 @@ h3 {
     .intro-image {
       width: 70%; } }
 
-/* PORTFOLIO STYLES */
 .portfolio-container {
   background-color: #fff;
   padding-top: 2em; }
@@ -175,7 +170,6 @@ h3 {
     .portfolio-item {
       width: 30%; } }
 
-/* CONTACT STYLES */
 .contact {
   padding: 2em 0.1em; }
 
@@ -196,19 +190,6 @@ h3 {
   #toggle:hover {
     color: #69945a; }
 
-/*.is-displayed-mobile {
-	@include mq(small) {
-		//dipslay: block; this was flagged as an error by validator
-		@at-root (with: media) {
-			.is-hidden-mobile {
-				display: none;
-			}
-		}
-	}
-	@include mq(medium) {
-		display: none;
-	}
-}*/
 @media (min-width: 1px) and (max-width: 768px -1) {
   .is-displayed-mobile {
     display: block; } }
