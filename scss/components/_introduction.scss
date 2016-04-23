@@ -9,12 +9,18 @@
 			align-self: flex-start;
 			text-align: left;
 			margin-top: 2em;
+			width: 70%;
 		}
+		@include mq(large) {
+			width: 60%;
+		}
+
 	}
 
 	@include mq(medium) {
 		@include flexy(row-reverse);
 	}
+
 }
 
 .intro-image {
@@ -22,10 +28,10 @@
 
 	@include mq(medium) {
 		margin: 2em;
-		width: 40%;
+		width: 30%;
 	}
 
 	@include mq(large) {
-		width: 70%;
+		width: 40%;
 	}
 }
